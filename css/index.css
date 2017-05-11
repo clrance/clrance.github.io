@@ -1,0 +1,247 @@
+body{
+    background: #f5f5f5;
+}
+/*jd_layout开始*/
+    .jd_layout{
+        width: 100%;
+        max-width: 640px;
+        min-width: 300px;
+        margin:0 auto;
+    }
+/*jd_layout结束*/
+/*header开始*/
+.jd_header{
+    position: fixed;/*他是相对浏览器的窗口来定位的，不受父元素影响*/
+    top:0;
+    left:0;
+    height:40px;
+    width: 100%;
+    z-index: 1;
+}
+.jd_header_box{
+    width: 100%;
+    max-width: 640px;
+    min-width: 300px;
+    margin:0 auto;
+    height: 40px;
+    background: rgba(201,21,35,0);
+    position: relative;
+}
+.jd_header .icon_logo{
+    position: absolute;
+    width: 60px;
+    height: 36px;
+    top:4px;
+    left:10px;
+    background-position:0 -103px;
+}
+.jd_header .login{
+    position: absolute;
+    width: 50px;
+    height: 40px;
+    top:0;
+    right:0;
+    color:#fff;
+    text-align: center;
+    line-height: 40px;
+}
+.jd_header form{
+    width: 100%;
+    padding-left:75px;
+    padding-right:50px;
+    position: relative;
+
+}
+.jd_header form input{
+    width: 100%;
+    border-radius: 15px;
+    height: 30px;
+    margin-top:5px;
+    padding-left:25px;
+}
+.jd_header .icon_search{
+    position: absolute;
+    top:10px;
+    left:80px;
+    width: 20px;
+    height: 20px;
+    background-position: -60px -109px;
+}
+/*header结束*/
+
+/*广告栏开始*/
+.jd_banner{
+    overflow: hidden;
+    position: relative;
+}
+.jd_banner ul:first-child{
+    width: 1000%;
+    transform: translateX(-10%);
+    -webkit-transform: translateX(-10%);
+}
+.jd_banner ul:first-child li{
+    width: 10%;
+    float: left;
+}
+.jd_banner ul:first-child li a{
+    display: block;
+    width: 100%;
+}
+.jd_banner ul:first-child li a img{
+    width: 100%;
+}
+.jd_banner ul:last-child{
+    position: absolute;
+    bottom:6px;
+    left:50%;
+    transform:translateX(-50%);
+}
+.jd_banner ul:last-child li{
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    border:1px solid #fff;
+    float: left;
+    margin-left:10px;
+}
+.jd_banner ul:last-child li.now{
+    background: #fff;
+}
+/*广告栏结束*/
+/*导航栏开始*/
+.jd_nav{
+    width: 100%;
+    padding:15px 10px;
+}
+.jd_nav ul{
+    width: 100%;
+}
+.jd_nav ul li{
+    float: left;
+    width: 25%;
+}
+.jd_nav ul li a{
+    display: block;
+    width: 100%;
+}
+.jd_nav ul li a img{
+    width: 50%;
+    margin:0 auto;
+}
+.jd_nav ul li a p{
+    font-size:12px;
+    padding:6px 0;
+    text-align: center;
+}
+/*导航栏结束*/
+/*商品大区块开始*/
+.jd_product{
+    padding:0 5px;
+}
+.product_box{
+    margin-bottom:10px;
+    box-shadow: 0 0 2px 0 #e0e0e0;
+    min-height: 200px;
+    background: #fff;
+}
+
+.product_box .product_tit{
+    height: 32px;
+    line-height: 32px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.product_box .product_tit.no-border{
+    border-bottom:none;
+}
+.product_box .product_con{
+
+}
+/*秒杀区块开始*/
+.sk_icon{
+    width: 16px;
+    height: 20px;
+    float: left;
+    background: url('../image/seckill-icon.png') no-repeat;
+    background-size: 16px 20px;
+    margin:6px 5px;
+}
+.sk_word{
+    float: left;
+    color:#D8505c;
+    font-size:15px;
+    margin-right:5px;
+}
+.sk_time{
+    float: left;
+}
+.sk_time span{
+    height: 15px;
+    line-height: 15px;
+    width: 15px;
+    text-align: center;
+    background: #333;
+    float: left;
+    margin-right:3px;
+    color:#fff;
+    margin-top:8px;
+}
+.sk_time span:nth-child(3n){
+    background: #fff;
+    color:#333;
+}
+.sk_product{
+    padding-top:10px;
+    width: 100%;
+}
+.sk_product li{
+    float: left;
+    width: 33.3333%;
+}
+.sk_product li a{
+    width: 100%;
+    display: block;
+}
+.sk_product li a img{
+    width: 60%;
+    margin:0 auto;
+}
+.sk_product li p{
+    text-align: center;
+}
+.sk_product li:nth-child(2) a{
+    border-right:1px solid #e0e0e0;
+    border-left:1px solid #e0e0e0;
+}
+.new_price{
+    color:#D8505c;
+    font-size:12px;
+    padding-top:8px;
+}
+.old_price{
+    font-size:12px;
+    text-decoration: line-through;
+    padding-top:8px;
+}
+/*秒杀区块结束*/
+
+.product_tit h3{
+    font-size:15px;
+    font-weight: normal;
+    color:#333;
+    padding-left:18px;
+    position: relative;
+}
+
+.product_tit h3::before{
+    content:"";
+    width: 3px;
+    height: 12px;
+    background:#D8505c ;
+    position: absolute;
+    top:10px;
+    left:10px;
+}
+.product_con a img{
+    width: 100%;
+}
+/*商品大区块结束*/
